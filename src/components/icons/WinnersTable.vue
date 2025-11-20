@@ -4,11 +4,11 @@
     <table v-if="nominations.length" class="nominations-table">
       <thead>
         <tr>
-          <th>НАСЛЕДИЕ ЮНЕСКО</th>
-          <th>ЗАГАДОЧНЫЙ МАЙЯ</th>
-          <th>ТЕКИЛА ЛЮБОВЬ</th>
-          <th>ОСТРЫЙ КАК ПЕРЕЦ ЧИЛИ</th>
-          <th>CЛАВНЫЙ САНЧЕС</th>
+          <th>ПРИШЕЛЕЦ ГОДА</th>
+          <th>АГЕНТ МЕГА</th>
+          <th>АРКАНИАНЕЦ</th>
+          <th>ПРЕДВОДИТЕЛЬ ЧЕРВЕЙ</th>
+          <th>МОПС ФРЭНК</th>
         </tr>
       </thead>
       <tbody>
@@ -18,8 +18,7 @@
               <li
                 v-for="member in sortedNominations(0)"
                 :key="member.personID"
-                class="nominee"
-              >
+                class="nominee">
                 <span class="name">{{ member.title }}</span>
                 <span class="votes">{{ member.votes }}</span>
               </li>
@@ -30,8 +29,7 @@
               <li
                 v-for="member in sortedNominations(1)"
                 :key="member.personID"
-                class="nominee"
-              >
+                class="nominee">
                 <span class="name">{{ member.title }}</span>
                 <span class="votes">{{ member.votes }}</span>
               </li>
@@ -42,8 +40,7 @@
               <li
                 v-for="member in sortedNominations(2)"
                 :key="member.personID"
-                class="nominee"
-              >
+                class="nominee">
                 <span class="name">{{ member.title }}</span>
                 <span class="votes">{{ member.votes }}</span>
               </li>
@@ -54,8 +51,7 @@
               <li
                 v-for="member in sortedNominations(3)"
                 :key="member.personID"
-                class="nominee"
-              >
+                class="nominee">
                 <span class="name">{{ member.title }}</span>
                 <span class="votes">{{ member.votes }}</span>
               </li>
@@ -66,8 +62,7 @@
               <li
                 v-for="member in sortedNominations(4)"
                 :key="member.personID"
-                class="nominee"
-              >
+                class="nominee">
                 <span class="name">{{ member.title }}</span>
                 <span class="votes">{{ member.votes }}</span>
               </li>
@@ -99,11 +94,11 @@ const fetchData = async () => {
     const answers = answersResponse.data;
 
     const nominationKeys = {
-      unesko: "НАСЛЕДИЕ ЮНЕСКО",
-      maya: "ЗАГАДОЧНЫЙ МАЙЯ",
-      tekila: "ТЕКИЛА ЛЮБОВЬ",
-      chily: "ОСТРЫЙ КАК ПЕРЕЦ ЧИЛИ",
-      derty: "ГРЯЗНЫЙ САНЧЕС",
+      unesko: "ПРИШЕЛЕЦ ГОДА",
+      maya: "АГЕНТ МЕГА",
+      tekila: "АРКАНИАНЕЦ",
+      chily: "ПРЕДВОДИТЕЛЬ ЧЕРВЕЙ",
+      derty: "МОПС ФРЭНК",
     };
 
     const votesCount = {

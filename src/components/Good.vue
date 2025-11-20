@@ -4,11 +4,11 @@
     <table v-if="nominations.length">
       <thead>
         <tr>
-          <th>НАСЛЕДИЕ ЮНЕСКО</th>
-          <th>ЗАГАДОЧНЫЙ МАЙЯ</th>
-          <th>ТЕКИЛА ЛЮБОВЬ</th>
-          <th>ОСТРЫЙ КАК ПЕРЕЦ ЧИЛИ</th>
-          <th>ГРЯЗНЫЙ САНЧЕС</th>
+          <th>ПРИШЕЛЕЦ ГОДА</th>
+          <th>АГЕНТ МЕГА</th>
+          <th>АРКАНИАНЕЦ</th>
+          <th>ПРЕДВОДИТЕЛЬ ЧЕРВЕЙ</th>
+          <th>МОПС ФРЭНК</th>
         </tr>
       </thead>
       <tbody>
@@ -74,11 +74,11 @@ const fetchData = async () => {
     const answers = answersResponse.data;
 
     const nominationKeys = {
-      unesko: "НАСЛЕДИЕ ЮНЕСКО",
-      maya: "ЗАГАДОЧНЫЙ МАЙЯ",
-      tekila: "ТЕКИЛА ЛЮБОВЬ",
-      chily: "ОСТРЫЙ КАК ПЕРЕЦ ЧИЛИ",
-      derty: "ГРЯЗНЫЙ САНЧЕС",
+      unesko: "ПРИШЕЛЕЦ ГОДА",
+      maya: "АГЕНТ МЕГА",
+      tekila: "АРКАНИАНЕЦ",
+      chily: "ПРЕДВОДИТЕЛЬ ЧЕРВЕЙ",
+      derty: "МОПС ФРЭНК",
     };
 
     const votesCount = {
