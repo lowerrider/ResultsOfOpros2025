@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://lowerrider.github.io/Results/",
+  "homepage": "https://lowerrider.github.io/ResultsOfOpros2025/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
